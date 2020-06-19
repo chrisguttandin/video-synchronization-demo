@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles/styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Video Synchronization Demo</title>
+    </head>
+    <body>
+        <h1>MediaSync</h1>
+        <div>
+            <button id="reset">reset</button>
+            <button id="pause">pause</button>
+            <button id="play">play</button>
+            <button id="skip-backward">skip 5 seconds back</button>
+            <button id="skip-forward">skip 5 seconds ahead</button>
+        </div>
+        <div>
+            <time id="position"></time>
+        </div>
+        <video id="player1">
+            <source src="https://mcorp.no/res/bigbuckbunny.webm" type="video/webm"/>
+            <source src="https://mcorp.no/res/bigbuckbunny.m4v" type="video/mp4"/>
+        </video>
+        <video id="player2">
+            <source src="https://mcorp.no/res/bigbuckbunny.webm" type="video/webm"/>
+            <source src="https://mcorp.no/res/bigbuckbunny.m4v" type="video/mp4"/>
+        </video>
+        <script src="scripts/app.js"></script>
+    </body>
+</html>
