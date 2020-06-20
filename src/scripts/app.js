@@ -8,7 +8,7 @@ const $positionSpan = document.getElementById('position');
 const $resetButton = document.getElementById('reset');
 const $skipBackwardButton = document.getElementById('skip-backward');
 const $skipForwardButton = document.getElementById('skip-forward');
-const timingObject = new TimingObject(new TimingProvider('n624E8xbD7rwxklk18ao'));
+const timingObject = new TimingObject(new TimingProvider('0123456789abcdefghij'));
 
 timingObject.addEventListener('readystatechange', () => {
     if (timingObject.readyState === 'open') {
