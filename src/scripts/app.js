@@ -2,8 +2,12 @@ import { TimingObject } from 'timing-object';
 import { TimingProvider } from 'timing-provider';
 import { mediaSync } from './media-sync';
 
+const $currentTime1Span = document.getElementById('current-time-1');
+const $currentTime2Span = document.getElementById('current-time-2');
 const $pauseButton = document.getElementById('pause');
 const $playButton = document.getElementById('play');
+const $player1 = document.getElementById('player-1');
+const $player2 = document.getElementById('player-2');
 const $positionSpan = document.getElementById('position');
 const $resetButton = document.getElementById('reset');
 const $skipBackwardButton = document.getElementById('skip-backward');
@@ -42,17 +46,19 @@ timingObject.addEventListener('readystatechange', () => {
             timingObject.update({ position: position + 5 });
         });
 
-        const updatePosition = () => {
+        const updateStats = () => {
             const { position } = timingObject.query();
 
+            $currentTime1Span.innerHTML = $player1.currentTime.toFixed(2);
+            $currentTime2Span.innerHTML = $player2.currentTime.toFixed(2);
             $positionSpan.innerHTML = position.toFixed(2);
 
-            requestAnimationFrame(updatePosition);
+            requestAnimationFrame(updateStats);
         };
 
-        updatePosition();
+        updateStats();
 
-        mediaSync(document.getElementById('player1'), timingObject);
-        mediaSync(document.getElementById('player2'), timingObject);
+        mediaSync($player1, timingObject);
+        mediaSync($player2, timingObject);
     }
 });
