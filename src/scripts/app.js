@@ -1,6 +1,6 @@
 import { TimingObject } from 'timing-object';
 import { TimingProvider } from 'timing-provider';
-import { mediaSync } from './media-sync';
+import { setTimingsrc } from 'timingsrc';
 
 const $currentTime1Span = document.getElementById('current-time-1');
 const $currentTime2Span = document.getElementById('current-time-2');
@@ -58,7 +58,7 @@ timingObject.addEventListener('readystatechange', () => {
 
         updateStats();
 
-        mediaSync($player1, timingObject);
-        mediaSync($player2, timingObject);
+        setTimingsrc($player1, timingObject);
+        setTimingsrc($player2, timingObject);
     }
 });
