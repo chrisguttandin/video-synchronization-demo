@@ -19,7 +19,7 @@
         "@babel/preset-env": "^7.11.0",
         "@commitlint/cli": "^9.1.1",
         "@commitlint/config-angular": "^9.1.1",
-        "autoprefixer": "^9.8.5",
+        "autoprefixer": "^9.8.6",
         "babel-loader": "^8.1.0",
         "commitizen": "^4.1.2",
         "cssnano": "^4.1.10",
