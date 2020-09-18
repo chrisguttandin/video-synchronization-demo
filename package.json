@@ -45,7 +45,7 @@
         "pretty-quick": "^3.0.2",
         "stylelint": "^13.7.1",
         "stylelint-config-holy-grail": "^6.0.3",
-        "webpack": "^4.44.1"
+        "webpack": "^4.44.2"
     },
     "homepage": "https://chrisguttandin.github.io/video-synchronization-demo",
     "husky": {
