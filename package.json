@@ -38,7 +38,7 @@
         "grunt-sh": "^0.2.0",
         "grunt-webpack": "^4.0.2",
         "htmlhint": "^0.14.2",
-        "husky": "^4.3.4",
+        "husky": "^4.3.5",
         "hyperlink": "^4.6.0",
         "load-grunt-config": "^3.0.1",
         "prettier": "^2.2.1",
