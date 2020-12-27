@@ -23,8 +23,8 @@ module.exports = (grunt) => {
             cmd: `eslint --config config/eslint/config.json --ext .js ${fix ? '--fix ' : ''}--report-unused-disable-directives *.js config/`
         },
         'lint-src': {
-            cmd: `eslint --config config/eslint/src.json --ext .js ${fix ? '--fix ' : ''}--report-unused-disable-directives src/ && \\
-                htmlhint --rules ${convertConfig(documentConfig)} 'src/**/index.html' && \\
+            cmd: `eslint --config config/eslint/src.json --ext .js ${fix ? '--fix ' : ''}--report-unused-disable-directives src/ && \
+                htmlhint --rules ${convertConfig(documentConfig)} 'src/**/index.html' && \
                 postcss src/**/*.css --config config/postcss/lint/ > /dev/null`
         }
     };
