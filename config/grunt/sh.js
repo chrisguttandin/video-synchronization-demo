@@ -11,10 +11,10 @@ module.exports = (grunt) => {
 
     return {
         'build-development': {
-            cmd: 'postcss src/**/*.css --base src/ --config config/postcss/build-development/ --dir build/'
+            cmd: 'npx postcss src/**/*.css --base src/ --config config/postcss/build-development/ --dir build/'
         },
         'build-production': {
-            cmd: 'postcss src/**/*.css --base src/ --config config/postcss/build-production/ --dir build/'
+            cmd: 'npx postcss src/**/*.css --base src/ --config config/postcss/build-production/ --dir build/'
         },
         'hyperlink': {
             cmd: 'hyperlink https://chrisguttandin.github.io/video-synchronization-demo'
@@ -25,7 +25,7 @@ module.exports = (grunt) => {
         'lint-src': {
             cmd: `eslint --config config/eslint/src.json --ext .js ${fix ? '--fix ' : ''}--report-unused-disable-directives src/ && \
                 htmlhint --rules ${convertConfig(documentConfig)} 'src/**/index.html' && \
-                postcss src/**/*.css --config config/postcss/lint/ > /dev/null`
+                npx postcss src/**/*.css --config config/postcss/lint/ > /dev/null`
         }
     };
 };
