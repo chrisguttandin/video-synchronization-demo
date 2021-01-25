@@ -69,4 +69,4 @@ jobs:
                   GIT_HUB_USER_EMAIL: ${{ secrets.GIT_HUB_USER_EMAIL }}
                   GIT_HUB_USER_NAME: ${{ secrets.GIT_HUB_USER_NAME }}
               name: Deploy website
-              run: grunt deploy
+              run: npx grunt deploy
