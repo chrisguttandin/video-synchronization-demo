@@ -25,7 +25,7 @@ module.exports = (grunt) => {
         'lint-src': {
             cmd: `eslint --config config/eslint/src.json --ext .js ${fix ? '--fix ' : ''}--report-unused-disable-directives src/ && \
                 htmlhint --rules ${convertConfig(documentConfig)} 'src/**/index.html' && \
-                npx postcss src/**/*.css --config config/postcss/lint/ > /dev/null`
+                npx stylelint src/**/*.css --config config/stylelint/config.json`
         }
     };
 };
