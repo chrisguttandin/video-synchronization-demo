@@ -22,7 +22,7 @@
         "autoprefixer": "^10.2.5",
         "babel-loader": "^8.2.2",
         "commitizen": "^4.2.4",
-        "cssnano": "^5.0.2",
+        "cssnano": "^5.0.4",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^7.26.0",
         "eslint-config-holy-grail": "^49.0.8",
