@@ -40,7 +40,7 @@
         "husky": "^6.0.0",
         "hyperlink": "^4.6.1",
         "load-grunt-config": "^3.0.1",
-        "postcss": "^8.3.4",
+        "postcss": "^8.3.5",
         "postcss-cli": "^8.3.1",
         "prettier": "^2.3.1",
         "pretty-quick": "^3.1.0",
