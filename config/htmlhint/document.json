@@ -6,15 +6,17 @@
     "doctype-first": true,
     "doctype-html5": true,
     "head-script-disabled": true,
+    "html-lang-require": true,
     "id-class-value": "hash",
     "id-unique": true,
     "inline-script-disabled": true,
     "inline-style-disabled": true,
     "space-tab-mixed-disabled": true,
     "spec-char-escape": true,
-    "style-disabled": true,
     "src-not-empty": true,
+    "style-disabled": true,
     "tag-pair": true,
+    "tag-self-close": true,
     "tagname-lowercase": true,
     "title-require": true
 }
