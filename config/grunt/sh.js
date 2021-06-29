@@ -1,11 +1,3 @@
-const documentConfig = require('../htmlhint/document');
-
-// eslint-disable-next-line padding-line-between-statements
-const convertConfig = (config) =>
-    Object.entries(config)
-        .map(([key, value]) => (typeof value === 'string' ? `${key}=${value}` : key))
-        .join(',');
-
 module.exports = (grunt) => {
     const fix = grunt.option('fix') === true;
 
@@ -24,7 +16,7 @@ module.exports = (grunt) => {
         },
         'lint-src': {
             cmd: `eslint --config config/eslint/src.json --ext .js ${fix ? '--fix ' : ''}--report-unused-disable-directives src/ && \
-                htmlhint --rules ${convertConfig(documentConfig)} 'src/**/index.html' && \
+                htmlhint --config config/htmlhint/document.json 'src/**/index.html' && \
                 npx stylelint src/**/*.css --config config/stylelint/config.json`
         }
     };
