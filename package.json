@@ -61,5 +61,5 @@
         "prepare": "husky install",
         "test": "grunt lint"
     },
-    "version": "1.2.33"
+    "version": "1.2.34"
 }
