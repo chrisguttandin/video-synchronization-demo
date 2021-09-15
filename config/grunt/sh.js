@@ -3,10 +3,12 @@ module.exports = (grunt) => {
 
     return {
         'build-development': {
-            cmd: 'npx postcss src/**/*.css --base src/ --config config/postcss/build-development/ --dir build/'
+            cmd: `webpack --config config/webpack/development.js && \
+                npx postcss src/**/*.css --base src/ --config config/postcss/build-development/ --dir build/`
         },
         'build-production': {
-            cmd: 'npx postcss src/**/*.css --base src/ --config config/postcss/build-production/ --dir build/'
+            cmd: `webpack --config config/webpack/production.js && \
+                npx postcss src/**/*.css --base src/ --config config/postcss/build-production/ --dir build/`
         },
         'hyperlink': {
             cmd: 'hyperlink https://chrisguttandin.github.io/video-synchronization-demo'
