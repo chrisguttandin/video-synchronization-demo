@@ -35,7 +35,6 @@
         "grunt-contrib-watch": "^1.1.0",
         "grunt-gh-pages": "^4.0.0",
         "grunt-sh": "^0.2.0",
-        "grunt-webpack": "^4.0.3",
         "htmlhint": "^0.15.1",
         "husky": "^7.0.2",
         "hyperlink": "^4.7.0",
