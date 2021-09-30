@@ -22,6 +22,7 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: resolve('build/scripts')
+        path: resolve('build/scripts'),
+        publicPath: '/scripts/'
     }
 };
