@@ -44,7 +44,7 @@
         "prettier": "^2.4.1",
         "pretty-quick": "^3.1.1",
         "stylelint": "^14.0.1",
-        "stylelint-config-holy-grail": "^7.0.1",
+        "stylelint-config-holy-grail": "^8.0.0",
         "webpack": "^5.62.1",
         "webpack-cli": "^4.9.1"
     },
