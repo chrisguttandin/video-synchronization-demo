@@ -42,7 +42,7 @@
         "postcss": "^8.4.4",
         "postcss-cli": "^9.0.2",
         "prettier": "^2.5.1",
-        "pretty-quick": "^3.1.1",
+        "pretty-quick": "^3.1.2",
         "stylelint": "^14.0.1",
         "stylelint-config-holy-grail": "^8.0.0",
         "webpack": "^5.62.1",
