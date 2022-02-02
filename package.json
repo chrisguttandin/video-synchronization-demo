@@ -11,7 +11,7 @@
     "dependencies": {
         "timing-object": "^3.1.42",
         "timing-provider": "^5.0.14",
-        "timingsrc": "^1.1.23"
+        "timingsrc": "^1.1.24"
     },
     "description": "A website to demo usage of the media-sync package with a TimingObject and a TimingProvider.",
     "devDependencies": {
