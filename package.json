@@ -21,7 +21,7 @@
         "@commitlint/config-angular": "^17.0.3",
         "autoprefixer": "^10.4.7",
         "babel-loader": "^8.2.5",
-        "commitizen": "^4.2.4",
+        "commitizen": "^4.2.5",
         "cssnano": "^5.1.11",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.17.0",
