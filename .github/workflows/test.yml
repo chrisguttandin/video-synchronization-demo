@@ -1,5 +1,9 @@
 name: Test
 
+concurrency:
+    cancel-in-progress: true
+    group: pages
+
 on:
     push:
         branches:
@@ -10,21 +14,26 @@ on:
         branches:
             - master
 
+permissions:
+    contents: read
+    id-token: write
+    pages: write
+
 jobs:
     build:
         runs-on: ubuntu-latest
 
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
 
             - name: Install Node.js 16.x
-              uses: actions/setup-node@v2
+              uses: actions/setup-node@v3
               with:
                   node-version: 16.x
 
             - name: Cache node modules
-              uses: actions/cache@v2
+              uses: actions/cache@v3
               with:
                   path: ~/.npm
                   key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -40,21 +49,25 @@ jobs:
     deploy:
         if: startsWith(github.ref, 'refs/tags/v')
 
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
         needs: build
 
         runs-on: ubuntu-latest
 
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v2
+              uses: actions/checkout@v3
 
             - name: Install Node.js 16.x
-              uses: actions/setup-node@v2
+              uses: actions/setup-node@v3
               with:
                   node-version: 16.x
 
             - name: Cache node modules
-              uses: actions/cache@v2
+              uses: actions/cache@v3
               with:
                   path: ~/.npm
                   key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -64,9 +77,17 @@ jobs:
             - name: Install dependencies
               run: npm ci
 
-            - env:
-                  GIT_HUB_ACCESS_TOKEN: ${{ secrets.GIT_HUB_ACCESS_TOKEN }}
-                  GIT_HUB_USER_EMAIL: ${{ secrets.GIT_HUB_USER_EMAIL }}
-                  GIT_HUB_USER_NAME: ${{ secrets.GIT_HUB_USER_NAME }}
-              name: Deploy website
-              run: npx grunt deploy
+            - name: Build website
+              run: grunt build:production
+
+            - name: Configure GitHub Pages
+              uses: actions/configure-pages@v2
+
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v1
+              with:
+                  path: ./build
+
+            - id: deployment
+              name: Deploy to GitHub Pages
+              uses: actions/deploy-pages@v1
