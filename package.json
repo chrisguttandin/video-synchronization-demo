@@ -25,7 +25,7 @@
         "cssnano": "^5.1.13",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.23.1",
-        "eslint-config-holy-grail": "^53.0.0",
+        "eslint-config-holy-grail": "^53.0.1",
         "grunt": "^1.5.3",
         "grunt-cli": "^1.4.3",
         "grunt-contrib-clean": "^2.0.1",
