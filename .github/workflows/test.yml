@@ -1,9 +1,5 @@
 name: Test
 
-concurrency:
-    cancel-in-progress: true
-    group: pages
-
 on:
     push:
         branches:
