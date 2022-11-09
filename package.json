@@ -35,7 +35,7 @@
         "grunt-contrib-watch": "^1.1.0",
         "grunt-sh": "^0.2.0",
         "htmlhint": "^1.1.4",
-        "husky": "^8.0.1",
+        "husky": "^8.0.2",
         "hyperlink": "^5.0.4",
         "load-grunt-config": "^4.0.1",
         "postcss": "^8.4.17",
