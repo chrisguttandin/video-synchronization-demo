@@ -20,7 +20,7 @@
         "@commitlint/cli": "^17.4.1",
         "@commitlint/config-angular": "^17.4.0",
         "autoprefixer": "^10.4.13",
-        "babel-loader": "^9.1.0",
+        "babel-loader": "^9.1.2",
         "commitizen": "^4.2.6",
         "cssnano": "^5.1.14",
         "cz-conventional-changelog": "^3.3.0",
