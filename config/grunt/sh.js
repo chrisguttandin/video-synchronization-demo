@@ -10,6 +10,9 @@ module.exports = (grunt) => {
             cmd: `webpack --config config/webpack/production.js && \
                 npx postcss src/**/*.css --base src/ --config config/postcss/build-production/ --dir build/`
         },
+        'clean': {
+            cmd: 'rimraf build/*'
+        },
         'hyperlink': {
             cmd: 'hyperlink https://chrisguttandin.github.io/video-synchronization-demo'
         },
