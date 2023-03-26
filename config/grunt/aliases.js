@@ -1,8 +1,6 @@
 module.exports = {
-    'build:development': ['sh:clean', 'sh:html-minifier', 'sh:build-development', 'copy:assets'],
-    'build:production': ['sh:clean', 'sh:html-minifier', 'sh:build-production', 'copy:assets'],
-    'lint': ['sh:lint-config', 'sh:lint-src'],
-    'monitor': ['build:development', 'connect', 'watch:development'],
-    'preview': ['build:production', 'connect', 'watch:production'],
-    'smoke': ['sh:hyperlink']
+    build: ['sh:clean', 'sh:html-minifier', 'sh:build'],
+    lint: ['sh:lint-config', 'sh:lint-src'],
+    monitor: ['sh:monitor'],
+    smoke: ['sh:hyperlink']
 };

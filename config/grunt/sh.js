@@ -2,13 +2,9 @@ module.exports = (grunt) => {
     const fix = grunt.option('fix') === true;
 
     return {
-        'build-development': {
-            cmd: `webpack --config config/webpack/development.js && \
-                npx postcss src/**/*.css --base src/ --config config/postcss/build-development/ --dir build/`
-        },
-        'build-production': {
-            cmd: `webpack --config config/webpack/production.js && \
-                npx postcss src/**/*.css --base src/ --config config/postcss/build-production/ --dir build/`
+        'build': {
+            cmd: `npx webpack --config config/webpack/production.js && \
+                npx postcss src/**/*.css --base src/ --config config/postcss/ --dir build/`
         },
         'clean': {
             cmd: 'rimraf build/*'
@@ -26,6 +22,9 @@ module.exports = (grunt) => {
             cmd: `eslint --config config/eslint/src.json --ext .js ${fix ? '--fix ' : ''}--report-unused-disable-directives src/ && \
                 htmlhint --config config/htmlhint/document.json 'src/**/index.html' && \
                 npx stylelint src/**/*.css --config config/stylelint/config.json`
+        },
+        'monitor': {
+            cmd: 'npx webpack server --config config/webpack/development.js'
         }
     };
 };
