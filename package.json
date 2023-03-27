@@ -28,7 +28,6 @@
         "eslint": "^8.36.0",
         "eslint-config-holy-grail": "^55.0.18",
         "grunt": "^1.6.1",
-        "grunt-cli": "^1.4.3",
         "html-minifier": "^4.0.0",
         "htmlhint": "^1.1.4",
         "husky": "^8.0.3",
