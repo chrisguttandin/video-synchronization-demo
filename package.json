@@ -26,7 +26,7 @@
         "cssnano": "^6.0.0",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.39.0",
-        "eslint-config-holy-grail": "^55.0.24",
+        "eslint-config-holy-grail": "^56.0.2",
         "html-minifier": "^4.0.0",
         "htmlhint": "^1.1.4",
         "husky": "^8.0.3",
