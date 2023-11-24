@@ -31,6 +31,7 @@
         "htmlhint": "^1.1.4",
         "husky": "^8.0.3",
         "hyperlink": "^5.0.4",
+        "lint-staged": "^15.1.0",
         "postcss": "^8.4.31",
         "postcss-cli": "^10.1.0",
         "prettier": "^2.8.8",
