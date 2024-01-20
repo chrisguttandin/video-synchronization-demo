@@ -15,7 +15,7 @@
     },
     "description": "A website to demo usage of the media-sync package with a TimingObject and a TimingProvider.",
     "devDependencies": {
-        "@babel/core": "^7.23.6",
+        "@babel/core": "^7.23.7",
         "@babel/preset-env": "^7.23.6",
         "@commitlint/cli": "^17.8.0",
         "@commitlint/config-angular": "^17.8.0",
