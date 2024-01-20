@@ -25,7 +25,7 @@
         "copy-webpack-plugin": "^11.0.0",
         "cssnano": "^6.0.3",
         "cz-conventional-changelog": "^3.3.0",
-        "eslint": "^8.55.0",
+        "eslint": "^8.56.0",
         "eslint-config-holy-grail": "^57.2.26",
         "html-minifier": "^4.0.0",
         "htmlhint": "^1.1.4",
