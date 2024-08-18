@@ -23,7 +23,7 @@
         "babel-loader": "^9.1.3",
         "commitizen": "^4.3.0",
         "copy-webpack-plugin": "^12.0.2",
-        "cssnano": "^7.0.1",
+        "cssnano": "^7.0.5",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.57.0",
         "eslint-config-holy-grail": "^59.0.8",
