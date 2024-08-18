@@ -32,7 +32,7 @@
         "husky": "^8.0.3",
         "hyperlink": "^5.0.4",
         "lint-staged": "^15.2.9",
-        "postcss": "^8.4.38",
+        "postcss": "^8.4.41",
         "postcss-cli": "^11.0.0",
         "prettier": "^3.2.5",
         "rimraf": "^5.0.5",
