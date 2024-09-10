@@ -29,7 +29,7 @@
         "eslint-config-holy-grail": "^59.0.16",
         "html-minifier": "^4.0.0",
         "htmlhint": "^1.1.4",
-        "husky": "^8.0.3",
+        "husky": "^9.1.5",
         "hyperlink": "^5.0.4",
         "lint-staged": "^15.2.10",
         "postcss": "^8.4.45",
