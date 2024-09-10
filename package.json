@@ -57,7 +57,7 @@
         "lint:config": "eslint --config config/eslint/config.json --ext .js --report-unused-disable-directives config/",
         "lint:src": "eslint --config config/eslint/src.json --ext .js --report-unused-disable-directives src/ && htmlhint --config config/htmlhint/document.json 'src/**/index.html' && npx stylelint 'src/**/*.css' --config config/stylelint/config.json",
         "monitor": "npx webpack server --config config/webpack/development.js",
-        "prepare": "husky install",
+        "prepare": "husky",
         "test": "npm run lint"
     },
     "version": "2.0.50"
