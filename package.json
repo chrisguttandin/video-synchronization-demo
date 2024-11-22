@@ -37,7 +37,7 @@
         "prettier": "^3.3.3",
         "rimraf": "^6.0.1",
         "stylelint": "^16.10.0",
-        "stylelint-config-holy-grail": "^12.0.19",
+        "stylelint-config-holy-grail": "^12.0.21",
         "webpack": "^5.96.1",
         "webpack-cli": "^5.1.4",
         "webpack-dev-server": "^5.1.0"
