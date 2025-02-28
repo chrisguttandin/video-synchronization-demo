@@ -9,7 +9,7 @@
         }
     },
     "dependencies": {
-        "timing-object": "^3.1.87",
+        "timing-object": "^3.1.88",
         "timing-provider": "^7.1.24",
         "timingsrc": "^1.4.25"
     },
