@@ -54,7 +54,7 @@
     "scripts": {
         "build": "rimraf build/* && html-minifier --config-file config/html-minifier/config.json --file-ext html --input-dir src --output-dir build && npx webpack --config config/webpack/production.js && npx postcss src/**/*.css --base src/ --config config/postcss/ --dir build/",
         "lint": "npm run lint:config && npm run lint:src",
-        "lint:config": "eslint --config config/eslint/config.json --ext .js --report-unused-disable-directives config/",
+        "lint:config": "eslint --config config/eslint/config.json --ext .cjs --ext .js --ext .mjs --report-unused-disable-directives config/",
         "lint:src": "eslint --config config/eslint/src.json --ext .js --report-unused-disable-directives src/ && htmlhint --config config/htmlhint/document.json 'src/**/index.html' && npx stylelint 'src/**/*.css' --config config/stylelint/config.json",
         "monitor": "npx webpack server --config config/webpack/development.js",
         "prepare": "husky",
