@@ -10,9 +10,23 @@ span {
 }
 
 div {
-    margin: 0 auto 2em;
+    margin: 0 auto 1em;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 video {
-    width: 50%;
+    margin: 0 auto 1em;
+    width: 100%;
+}
+
+time {
+    display: block;
 }

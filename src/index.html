@@ -16,19 +16,25 @@
         </div>
         <div>
             <time id="position"></time>
-            <time id="current-time-1"></time>
-            <time id="current-time-2"></time>
         </div>
-        <video id="player-1">
-            <source src="assets/big-buck-bunny.av1.mp4" type="video/mp4; codec=av01" />
-            <source src="assets/big-buck-bunny.hevc.mp4" type="video/mp4; codec=hevc" />
-            <source src="assets/big-buck-bunny.h264.mp4" type="video/mp4; codec=avc1" />
-        </video>
-        <video id="player-2">
-            <source src="assets/big-buck-bunny.av1.mp4" type="video/mp4; codec=av01" />
-            <source src="assets/big-buck-bunny.hevc.mp4" type="video/mp4; codec=hevc" />
-            <source src="assets/big-buck-bunny.h264.mp4" type="video/mp4; codec=avc1" />
-        </video>
+        <ul>
+            <li>
+                <video id="player-1">
+                    <source src="assets/big-buck-bunny.av1.mp4" type="video/mp4; codec=av01" />
+                    <source src="assets/big-buck-bunny.hevc.mp4" type="video/mp4; codec=hevc" />
+                    <source src="assets/big-buck-bunny.h264.mp4" type="video/mp4; codec=avc1" />
+                </video>
+                <time id="current-time-1"></time>
+            </li>
+            <li>
+                <video id="player-2">
+                    <source src="assets/big-buck-bunny.av1.mp4" type="video/mp4; codec=av01" />
+                    <source src="assets/big-buck-bunny.hevc.mp4" type="video/mp4; codec=hevc" />
+                    <source src="assets/big-buck-bunny.h264.mp4" type="video/mp4; codec=avc1" />
+                </video>
+                <time id="current-time-2"></time>
+            </li>
+        </ul>
         <script src="scripts/app.js"></script>
     </body>
 </html>
