@@ -19,6 +19,7 @@ timingObject.addEventListener('readystatechange', () => {
         $pauseButton.addEventListener('click', () => {
             timingObject.update({ velocity: 0 });
         });
+        $pauseButton.disabled = false;
 
         $playButton.addEventListener('click', () => {
             const { position, velocity } = timingObject.query();
@@ -29,22 +30,26 @@ timingObject.addEventListener('readystatechange', () => {
                 timingObject.update({ velocity: 1 });
             }
         });
+        $playButton.disabled = false;
 
         $resetButton.addEventListener('click', () => {
             timingObject.update({ position: 0 });
         });
+        $resetButton.disabled = false;
 
         $skipBackwardButton.addEventListener('click', () => {
             const { position } = timingObject.query();
 
             timingObject.update({ position: position - 5 });
         });
+        $skipBackwardButton.disabled = false;
 
         $skipForwardButton.addEventListener('click', () => {
             const { position } = timingObject.query();
 
             timingObject.update({ position: position + 5 });
         });
+        $skipForwardButton.disabled = false;
 
         const updateStats = () => {
             const { position } = timingObject.query();
