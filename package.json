@@ -28,7 +28,7 @@
         "eslint": "^8.57.0",
         "eslint-config-holy-grail": "^61.0.1",
         "html-minifier": "^4.0.0",
-        "htmlhint": "^1.6.3",
+        "htmlhint": "^1.7.1",
         "husky": "^9.1.7",
         "hyperlink": "^5.0.4",
         "lint-staged": "^16.1.2",
