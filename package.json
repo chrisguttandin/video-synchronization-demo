@@ -17,7 +17,7 @@
     "devDependencies": {
         "@babel/core": "^7.28.5",
         "@babel/preset-env": "^7.28.5",
-        "@commitlint/cli": "^19.8.1",
+        "@commitlint/cli": "^20.3.0",
         "@commitlint/config-angular": "^19.8.1",
         "autoprefixer": "^10.4.23",
         "babel-loader": "^10.0.0",
