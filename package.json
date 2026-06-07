@@ -40,7 +40,7 @@
         "stylelint": "^17.12.0",
         "stylelint-config-holy-grail": "^13.0.1",
         "webpack": "^5.107.2",
-        "webpack-cli": "^7.0.2",
+        "webpack-cli": "^7.0.3",
         "webpack-dev-server": "^5.2.4"
     },
     "homepage": "https://chrisguttandin.github.io/video-synchronization-demo",
