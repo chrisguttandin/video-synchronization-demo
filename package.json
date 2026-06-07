@@ -27,6 +27,7 @@
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^9.39.4",
         "eslint-config-holy-grail": "^63.0.0",
+        "globals": "^17.6.0",
         "html-minifier": "^4.0.0",
         "htmlhint": "^1.9.2",
         "husky": "^9.1.7",
