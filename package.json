@@ -41,7 +41,7 @@
         "stylelint-config-holy-grail": "^13.0.2",
         "webpack": "^5.107.2",
         "webpack-cli": "^7.0.3",
-        "webpack-dev-server": "^5.2.4"
+        "webpack-dev-server": "^5.2.5"
     },
     "homepage": "https://chrisguttandin.github.io/video-synchronization-demo",
     "license": "MIT",
