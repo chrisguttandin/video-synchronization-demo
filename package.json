@@ -39,7 +39,7 @@
         "rimraf": "^6.1.3",
         "stylelint": "^17.14.0",
         "stylelint-config-holy-grail": "^13.0.2",
-        "webpack": "^5.107.2",
+        "webpack": "^5.108.3",
         "webpack-cli": "^7.0.3",
         "webpack-dev-server": "^5.2.5"
     },
